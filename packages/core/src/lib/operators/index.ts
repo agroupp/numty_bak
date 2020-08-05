@@ -5,3 +5,6 @@ export { ones } from './array-creation';
 export { zeros } from './array-creation';
 export { full } from './array-creation';
 export { generateFlat } from './array-creation';
+
+export { fromStringToChar } from './array-creation';
+export { fromStringToNumber } from './array-creation';

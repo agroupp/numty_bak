@@ -8,7 +8,12 @@ import {
   generateFlat
 } from '../../src/lib/operators';
 
-describe('Array creation', () => {
+import {
+  fromStringToChar,
+  fromStringToNumber
+} from '../../src/lib/operators';
+
+describe('Ones and zeros', () => {
   it(`should return flat array with 'twos'`, () => {
     expect(generateFlat(5, 2)).toEqual([2, 2, 2, 2, 2]);
   });
@@ -85,5 +90,20 @@ describe('Array creation', () => {
 
   it('should generate array of 42s', () => {
     expect(full<number>([2, 2], 42)).toEqual([[42, 42], [42, 42]]);
+  });
+});
+
+describe('From data', () => {
+  it('should create array of chars from string', () => {
+    expect(fromStringToChar('abc')).toEqual(['a', 'b', 'c']);
+  });
+
+  it('should create array of integers from string', () => {
+    expect(fromStringToNumber('1 2, 3 : 4')).toEqual([1, 2, 3, 4]);
+  });
+
+  it('should create array of floats from string', () => {
+    expect(fromStringToNumber('1 2.5, 3.14 : 4')).toEqual([1, 2.5, 3.14, 4]);
+    expect(fromStringToNumber('1 2.5, abc 3.14 : 4')).toEqual([1, 2.5, 3.14, 4]);
   });
 });
