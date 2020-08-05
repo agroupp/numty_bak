@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@numty/core": ["libs/core/src/index.ts"],
+      "@numty/shared/internals": ["libs/shared/internals/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

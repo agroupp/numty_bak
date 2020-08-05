@@ -21,7 +21,14 @@
       }
     }
   },
-  "projects": {},
+  "projects": {
+    "core": {
+      "tags": ["scope:public", "type:util", "target:all"]
+    },
+    "shared-internals": {
+      "tags": ["scope:internal", "type:util", "target:all"]
+    }
+  },
   "workspaceLayout": {
     "appsDir": "packages",
     "libsDir": "packages"
