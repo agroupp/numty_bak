@@ -17,7 +17,9 @@ export function linspace(start: number, stop: number, num = 50, endPoint = true,
     throw('NUmber of samples must be non-negative');
   }
   const step = endPoint ? (stop - start) / (num - 1) : (stop - start) / num;
-  return retStep ?
-    [ ...arange(start, endPoint ? stop + step : stop, step), step] :
-    arange(start, endPoint ? stop + step : stop, step);
+  let result = arange(start, endPoint ? stop + step : stop, step);
+  if (result.length > num) {
+    result = result.slice(0, num);
+  }
+  return retStep ? [ ...result, step] : result;
 }

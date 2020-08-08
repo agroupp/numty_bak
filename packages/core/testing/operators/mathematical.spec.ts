@@ -2,7 +2,7 @@ import {
   round,
   isNumber,
   getNumberOfFloatDecimals
-} from '../../src/lib/operators/mathematical';
+} from '../../src/operators/mathematical';
 
 describe('Rounding', () => {
   it('should round values to specified number of decimals', () => {

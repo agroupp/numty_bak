@@ -1,3 +1,4 @@
+// Array Creation
 export { empty } from './array-creation';
 export { eye } from './array-creation';
 export { identity } from './array-creation';
@@ -11,3 +12,11 @@ export { fromStringToNumber } from './array-creation';
 
 export { arange } from './array-creation';
 export { linspace } from './array-creation';
+export { logspace } from './array-creation';
+
+// Mathematical Rounding
+export { round } from './mathematical';
+
+// Mathematical Misc
+export { isNumber } from './mathematical';
+export { getNumberOfFloatDecimals } from './mathematical';

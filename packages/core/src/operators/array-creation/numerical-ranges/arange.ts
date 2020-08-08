@@ -1,5 +1,3 @@
-import { getNumberOfFloatDecimals, round } from '../../mathematical';
-
 /**
  * Return spaced values within a given interval.
  * Values are generated within the half-open interval [`start`, `stop`)
@@ -19,10 +17,13 @@ export function arange(start: number, stop = 0, step = 1): number[] {
   if (stop <= start) {
     throw('Stop point must be bigger then start');
   }
-  const stepFloatDecimals = getNumberOfFloatDecimals(step);
   const result: number[] = [];
   for (let i = 0; i < Math.ceil((stop - start) / step); i++) {
-    result[i] = stepFloatDecimals > 0 ? round(start + i * step, stepFloatDecimals) : start + i * step;
+    const item = start + i * step;
+    if (item >= stop) {
+      break;
+    }
+    result[i] = item;
   }
   return result;
 }
