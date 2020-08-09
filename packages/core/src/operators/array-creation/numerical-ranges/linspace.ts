@@ -14,7 +14,7 @@ import { arange } from './arange';
  */
 export function linspace(start: number, stop: number, num = 50, endPoint = true, retStep = false): number[] {
   if (num < 0) {
-    throw('NUmber of samples must be non-negative');
+    throw('Number of samples must be non-negative');
   }
   const step = endPoint ? (stop - start) / (num - 1) : (stop - start) / num;
   let result = arange(start, endPoint ? stop + step : stop, step);

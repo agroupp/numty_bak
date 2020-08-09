@@ -2,7 +2,7 @@ import { generateFlat } from './generateFlat';
 
 /**
  * Return a new array of given shape filled
- * with `null`
+ * with `value`
  * @param shape
  */
 export function full<T>(shape: number[], fillValue: T): unknown[] {

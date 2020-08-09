@@ -6,7 +6,8 @@ import {
   zeros,
   full,
   generateFlat,
-  round
+  round,
+  fromFlat
 } from '../../src/operators';
 
 import {
@@ -103,10 +104,12 @@ describe('Ones and zeros', () => {
 describe('From data', () => {
   it('should create array of chars from string', () => {
     expect(fromStringToChar('abc')).toEqual(['a', 'b', 'c']);
+    expect(fromStringToChar(null)).toEqual([]);
   });
 
   it('should create array of integers from string', () => {
     expect(fromStringToNumber('1 2, 3 : 4')).toEqual([1, 2, 3, 4]);
+    expect(fromStringToNumber(null)).toEqual([]);
   });
 
   it('should create array of floats from string', () => {
@@ -124,6 +127,7 @@ describe('Numerical Ranges', () => {
     expect(arange(-3, 2, 2)).toEqual([-3, -1, 1]);
     expect(arange(-1, 1, 0.2).map(v => round(v, 1))).toEqual([-1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8]);
     expect(arange(2, 3.333333, 0.333333).map(v => round(v, 2))).toEqual([2, 2.33, 2.67, 3, 3.33]);
+    expect(() => arange(3, 1)).toThrowError('Stop point must be bigger then start');
   });
   it('should create linear array range (linspace)', () => {
     expect(linspace(2, 3, 5)).toEqual([2, 2.25, 2.5, 2.75, 3]);
@@ -133,11 +137,17 @@ describe('Numerical Ranges', () => {
     expect(linspace(2, 3, 5, false)).toEqual([2, 2.2, 2.4, 2.6, 2.8]);
     expect(linspace(2, 3, 5, true, true)).toEqual([2, 2.25, 2.5, 2.75, 3, 0.25]);
     expect(linspace(2, 3, 5, false, true)).toEqual([2, 2.2, 2.4, 2.6, 2.8, 0.2]);
+    expect(() => linspace(1, 2, -3)).toThrowError('Number of samples must be non-negative');
   });
 
   it('should create logarythmic array range (logspace)', () => {
     expect(logspace(2, 3, 4).map(v => round(v, 6))).toEqual([100, 215.443469, 464.158883, 1000]);
     expect(logspace(2, 3, 4, false).map(v => round(v, 6))).toEqual([100, 177.827941, 316.227766, 562.341325]);
     expect(logspace(2, 3, 4, true, 2).map(v => round(v, 6))).toEqual([4, 5.039684, 6.349604, 8]);
+  });
+
+  it('should create array with values from source array', () => {
+    expect(fromFlat<number>([1, 2, 3, 4, 5, 6, 7, 8, 9], [3, 3]))
+    .toEqual([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
   });
 });
