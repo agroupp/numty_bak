@@ -14,6 +14,10 @@ export { arange } from './array-creation';
 export { linspace } from './array-creation';
 export { logspace } from './array-creation';
 
+// Array Manipulation
+export { subArrayLength } from './array-manipulation';
+export { shape } from './array-manipulation';
+
 // Mathematical Rounding
 export { round } from './mathematical';
 
