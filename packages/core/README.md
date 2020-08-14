@@ -14,6 +14,10 @@ In the Core package you will find basic array creation and manipulation operator
 * [NumPy](https://numpy.org/) for the greatest inspiration
 * [sentdex ](https://www.youtube.com/c/sentdex) for great lessons on Python and data analysis.
 
+## Resources
+* Sources: https://github.com/agroupp/numty
+* Source Code Documentation: https://agroupp.github.io/numty/
+
 ## Installing
 ```shell
 npm install --save @numty/core

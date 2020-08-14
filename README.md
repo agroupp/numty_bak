@@ -13,5 +13,5 @@ Packages architecture designed to be highly tree shakable, you don’t need to i
 * [sentdex ](https://www.youtube.com/c/sentdex) for great lessons on Python and data analysis.
 
 ## Packages
-* @numty/core
+* [@numty/core](https://agroupp.github.io/numty/)
 
