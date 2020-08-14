@@ -1,0 +1,33 @@
+{
+  "@numty/core": {
+    "Introduction": [
+      "index",
+      "globals"
+    ],
+    "Modules": [
+      "modules/_packages_core_src_interfaces_direction_",
+      "modules/_packages_core_src_internals_string_isdigitsonly_",
+      "modules/_packages_core_src_internals_string_isnullorempty_",
+      "modules/_packages_core_src_operators_array_creation_from_data_fromflat_",
+      "modules/_packages_core_src_operators_array_creation_from_data_fromstringtochar_",
+      "modules/_packages_core_src_operators_array_creation_from_data_fromstringtonumber_",
+      "modules/_packages_core_src_operators_array_creation_numerical_ranges_arange_",
+      "modules/_packages_core_src_operators_array_creation_numerical_ranges_linspace_",
+      "modules/_packages_core_src_operators_array_creation_numerical_ranges_logspace_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_empty_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_eye_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_full_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_generateflat_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_identity_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_ones_",
+      "modules/_packages_core_src_operators_array_creation_ones_and_zeros_zeros_",
+      "modules/_packages_core_src_operators_array_manipulation_basic_shape_",
+      "modules/_packages_core_src_operators_array_manipulation_basic_subarraylength_",
+      "modules/_packages_core_src_operators_array_manipulation_shape_changing_flat_",
+      "modules/_packages_core_src_operators_array_manipulation_shape_changing_reshape_",
+      "modules/_packages_core_src_operators_mathematical_miscellaneous_getnumberoffloatdecimals_",
+      "modules/_packages_core_src_operators_mathematical_miscellaneous_isnumber_",
+      "modules/_packages_core_src_operators_mathematical_rounding_round_"
+    ]
+  }
+}

@@ -1,4 +1,21 @@
 {
   "name": "@numty/core",
-  "version": "0.0.1"
+  "description": "The fundamental package for scientific computing with Typescript or Javascript.",
+  "version": "0.0.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agroupp/numty.git",
+    "directory": "packages/core"
+  },
+  "author": {
+    "name": "Arthur Groupp",
+    "email": "arth.groupp@gmail.com"
+  },
+  "keywords": [
+    "numpy",
+    "data science",
+    "scientific computing",
+    "array"
+  ]
 }

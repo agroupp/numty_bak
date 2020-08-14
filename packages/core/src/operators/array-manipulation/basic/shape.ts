@@ -1,10 +1,14 @@
 import { subArrayLength } from './subArrayLength';
+import { Shape } from '@numty/core/types';
 
 /**
  * Return the shape of an array
+ *
+ * @category Array Manipulation
+ *
  * @param arr
  */
-export function shape(arr: unknown[]): number[] {
+export function shape(arr: unknown[]): Shape {
   if (arr.length === 0) {
     return [];
   }

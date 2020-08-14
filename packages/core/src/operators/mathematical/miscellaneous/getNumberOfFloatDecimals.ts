@@ -2,6 +2,9 @@ import { isNumber } from './isNumber';
 
 /**
  * Return number of decimals of float part
+ *
+ * @category Mathematical Miscellaneous
+ *
  * @param value Input data
  */
 export function getNumberOfFloatDecimals(value: number): number {

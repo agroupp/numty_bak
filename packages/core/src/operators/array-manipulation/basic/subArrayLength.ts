@@ -1,7 +1,10 @@
 /**
  * Check that all sub arrays have the same length
  * and return this length. Otherwise return -1
- * @param arr
+ *
+ * @category Array Manipulation
+ *
+ * @param arr Array to check
  */
 export function subArrayLength(arr: unknown[]): number {
   let result = -1;

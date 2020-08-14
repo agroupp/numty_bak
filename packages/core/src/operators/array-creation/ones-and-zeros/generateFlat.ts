@@ -1,6 +1,9 @@
 /**
  * Return one dimensional array filled with
  * specified value
+ *
+ * @category Array Creation
+ *
  * @param length
  * @param fill
  */

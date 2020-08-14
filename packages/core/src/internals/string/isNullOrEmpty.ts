@@ -1,4 +1,5 @@
 /**
+ * @internal
  * Return `true` if a specified string is null, empty
  */
 export function isNullOrEmpty(str: string): boolean {

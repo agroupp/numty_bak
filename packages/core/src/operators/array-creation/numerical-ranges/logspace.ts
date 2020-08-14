@@ -4,6 +4,8 @@ import { linspace } from './linspace';
  * Return numbers spaced evenly on a log scale.
  * In linear space, the sequence starts at `base ^ start` (base to the power of start) and ends with `base ^ stop`
  *
+ * @category Array Creation
+ *
  * @param start The starting value of the sequence
  * @param stop The final value of the sequence
  * @param num Number of samples to generate. Default is 50. Must be non-negative

@@ -1,11 +1,14 @@
-import * as stringLib from '../../../internals/string';
+import { isNullOrEmpty } from '../../../internals/string';
 
 /**
  * A new 1-D array of numbers initialized from text data in a string.
- * @param str
+ *
+ * @category Array Creation
+ *
+ * @param str String to convert
  * */
 export function fromStringToNumber(str: string): number[] {
-  if (stringLib.isNullOrEmpty(str)) {
+  if (isNullOrEmpty(str)) {
     return [];
   }
   str = str.replace(/[,\s:;]/g, ' ');

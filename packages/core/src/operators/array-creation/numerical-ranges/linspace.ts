@@ -3,6 +3,8 @@ import { arange } from './arange';
 /**
  * Return `num` spaced samples, calculated over the interval [`start`, `stop`].
  *
+ * @category Array Creation
+ *
  * @param start The starting value of the sequence
  * @param stop The end value of the sequence, unless `endPoint` is set to `false`.
  * In that case, the sequence consists of all but the last of num + 1 spaced samples,

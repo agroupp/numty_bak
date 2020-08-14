@@ -1,5 +1,17 @@
-# Numty
+# NumTy
 
 The fundamental package for scientific computing with Typescript or Javascript.
-The main point of creation of this package is to have the similar functionality
-like Python guys have thanks to [NumPy](https://numpy.org/).
+
+How many times you was looking at your code and thought: *"I can do it in one line of code on Python using NumPy*. The main purpose of this package is to create something similar on Typescript.
+
+Of course, Typescript code cannot be a performance competitor to Python library that actually is a C compiled code. However, Typescript is the language we use for many things and it needs data processing. Much functionality was implemented by JavaScript engine as native code in `Array`, `Math` and `String` classes and it doesn’t make sense to re-implement it. Therefore, at first step I took the fundamental routines of [NumPy](https://numpy.org/), that not overlapping with native code and implemented it as operators in the package.
+
+Packages architecture designed to be highly tree shakable, you don’t need to import the whole library, just take what you actually need only. Because library wrote in Typescript, it shows good support to vanilla JavaScript projects and to [Angular](https://angular.io/), [React](https://reactjs.org/) or [NestJS](https://nestjs.com/) in the same way.
+
+## Credits
+* [NumPy](https://numpy.org/) for the greatest inspiration
+* [sentdex ](https://www.youtube.com/c/sentdex) for great lessons on Python and data analysis.
+
+## Packages
+* @numty/core
+

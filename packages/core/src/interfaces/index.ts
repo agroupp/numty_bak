@@ -1,1 +1,0 @@
-export { DirectionOneD } from './direction';

@@ -1,5 +1,8 @@
 /**
  * Round to the given number of decimals.
+ *
+ * @category Mathematical Rounding
+ *
  * @param value Input data
  * @param decimals Number of decimal places to round to (default: 0).
  * If decimals is negative, it specifies the number of positions to the left of the decimal point.

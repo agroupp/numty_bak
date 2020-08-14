@@ -8,5 +8,25 @@
     "types": ["node"]
   },
   "exclude": ["**/*.spec.ts"],
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "typedocOptions": {
+    "mode": "file",
+    "inputFiles": "packages/core/src",
+    "out": "docs",
+    "entryPoint": "index",
+    "exclude": "**/*(index|core).ts",
+    "excludeNotExported": true,
+    "excludePrivate": true,
+    "stripInternal": true,
+    "hideGenerator": true,
+    "categoryOrder": [
+      "Array Creation",
+      "Array Manipulation",
+      "Mathematical Rounding",
+      "Mathematical Miscellaneous",
+      "*"
+    ],
+    "json": "docs/sidebar.json",
+    "plugin": "none"
+  }
 }

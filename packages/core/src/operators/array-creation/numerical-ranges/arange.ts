@@ -2,6 +2,9 @@
  * Return spaced values within a given interval.
  * Values are generated within the half-open interval [`start`, `stop`)
  * (in other words, the interval including start but excluding stop).
+ *
+ * @category Array Creation
+ *
  * @param start Start of interval. The interval includes this value. The default start value is 0.
  * If stop value is omitted, the start becomes 0 and this value becomes stop. For example
  * `arange(3)` will return `[0, 1, 2]`

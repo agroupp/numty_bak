@@ -1,7 +1,10 @@
-import { DirectionOneD } from '../../../interfaces';
+import { DirectionOneD } from '@numty/core/types'
 
 /**
  * Return a 2-D array with ones on the diagonal and zeros elsewhere.
+ *
+ * @category Array Creation
+ *
  * @param rows
  * @param columns
  * @param diagonal

@@ -1,11 +1,14 @@
-import * as stringLib from '../../../internals/string';
+import { isNullOrEmpty } from '../../../internals/string';
 
 /**
  * A new 1-D array of chars initialized from text data in a string.
- * @param str
+ *
+ * @category Array Creation
+ *
+ * @param str String to convert
  * */
 export function fromStringToChar(str: string): string[] {
-  if (stringLib.isNullOrEmpty(str)) {
+  if (isNullOrEmpty(str)) {
     return [];
   }
   let result: string[] = str.split('');
