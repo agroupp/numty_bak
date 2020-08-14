@@ -13539,6 +13539,81 @@
 			]
 		},
 		{
+			"id": 775,
+			"name": "around",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 776,
+					"name": "around",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Round array items to the given number of decimals\non an element-wise basis."
+					},
+					"parameters": [
+						{
+							"id": 777,
+							"name": "arr",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input data"
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						},
+						{
+							"id": 778,
+							"name": "decimals",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Number of decimal places to round to (default: 0).\nIf decimals is negative, it specifies the number of positions to the left of the decimal point.\n"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/core/src/operators/mathematical/rounding/around.ts",
+					"line": 13,
+					"character": 22
+				}
+			]
+		},
+		{
 			"id": 700,
 			"name": "empty",
 			"kind": 64,
@@ -14926,6 +15001,7 @@
 			"kind": 64,
 			"children": [
 				737,
+				775,
 				700,
 				709,
 				728,
@@ -14977,6 +15053,7 @@
 				{
 					"title": "Mathematical Rounding",
 					"children": [
+						775,
 						771
 					]
 				},

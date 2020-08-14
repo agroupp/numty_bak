@@ -65,9 +65,10 @@
 				<a href="#numty-core" id="numty-core" style="color: inherit; text-decoration: none;">
 					<h1>NumTy Core</h1>
 				</a>
-				<p>The fundamental package for scientific computing with Typescript or Javascript.
-					The main point of creation of this package is to have the similar functionality
-				like Python guys have thanks to <a href="https://numpy.org/">NumPy</a>.</p>
+				<p>The fundamental package for scientific computing with Typescript or Javascript.</p>
+				<p>How many times you was looking at your code and thought: <em>&quot;I can do it in one line of code on Python using NumPy</em>. The main purpose of this package is to create something similar on Typescript.</p>
+				<p>Of course, Typescript code cannot be a performance competitor to Python library that actually is a C compiled code. However, Typescript is the language we use for many things and it needs data processing. Much functionality was implemented by JavaScript engine as native code in <code>Array</code>, <code>Math</code> and <code>String</code> classes and it doesn’t make sense to re-implement it. Therefore, at first step I took the fundamental routines of <a href="https://numpy.org/">NumPy</a>, that not overlapping with native code and implemented it as operators in the package.</p>
+				<p>Package architecture designed to be highly tree shakable, you don’t need to import the whole library, just take what you actually need only. Because library wrote in Typescript, it shows good support to vanilla JavaScript projects and to <a href="https://angular.io/">Angular</a>, <a href="https://reactjs.org/">React</a> or <a href="https://nestjs.com/">NestJS</a> in the same way.</p>
 				<p>In the Core package you will find basic array creation and manipulation operators and mathematical functions.</p>
 				<a href="#credits" id="credits" style="color: inherit; text-decoration: none;">
 					<h2>Credits</h2>
@@ -76,6 +77,17 @@
 					<li><a href="https://numpy.org/">NumPy</a> for the greatest inspiration</li>
 					<li><a href="https://www.youtube.com/c/sentdex">sentdex </a> for great lessons on Python and data analysis.</li>
 				</ul>
+				<a href="#resources" id="resources" style="color: inherit; text-decoration: none;">
+					<h2>Resources</h2>
+				</a>
+				<ul>
+					<li>Sources: <a href="https://github.com/agroupp/numty">https://github.com/agroupp/numty</a></li>
+					<li>Source Code Documentation: <a href="https://agroupp.github.io/numty/">https://agroupp.github.io/numty/</a></li>
+				</ul>
+				<a href="#installing" id="installing" style="color: inherit; text-decoration: none;">
+					<h2>Installing</h2>
+				</a>
+				<pre><code class="language-shell">npm install --save @numty/core</code></pre>
 				<a href="#running-unit-tests" id="running-unit-tests" style="color: inherit; text-decoration: none;">
 					<h2>Running unit tests</h2>
 				</a>
@@ -106,6 +118,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#arange" class="tsd-kind-icon">arange</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#around" class="tsd-kind-icon">around</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#empty" class="tsd-kind-icon">empty</a>

@@ -24,6 +24,7 @@ export { reshape } from './array-manipulation';
 
 // Mathematical Rounding
 export { round } from './mathematical';
+export { around } from './mathematical';
 
 // Mathematical Misc
 export { isNumber } from './mathematical';
