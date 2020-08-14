@@ -13614,6 +13614,64 @@
 			]
 		},
 		{
+			"id": 779,
+			"name": "ceil",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 780,
+					"name": "ceil",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return the ceiling of the input, element-wise."
+					},
+					"parameters": [
+						{
+							"id": 781,
+							"name": "arr",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input array\n"
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/core/src/operators/mathematical/rounding/ceil.ts",
+					"line": 8,
+					"character": 20
+				}
+			]
+		},
+		{
 			"id": 700,
 			"name": "empty",
 			"kind": 64,
@@ -13824,6 +13882,64 @@
 					"fileName": "packages/core/src/operators/array-manipulation/shape-changing/flat.ts",
 					"line": 27,
 					"character": 20
+				}
+			]
+		},
+		{
+			"id": 782,
+			"name": "floor",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 783,
+					"name": "floor",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return the floor of the input, element-wise."
+					},
+					"parameters": [
+						{
+							"id": 784,
+							"name": "arr",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input array\n"
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/core/src/operators/mathematical/rounding/floor.ts",
+					"line": 8,
+					"character": 21
 				}
 			]
 		},
@@ -14728,6 +14844,64 @@
 			]
 		},
 		{
+			"id": 785,
+			"name": "rint",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 786,
+					"name": "rint",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Round elements of the array to the nearest integer."
+					},
+					"parameters": [
+						{
+							"id": 787,
+							"name": "arr",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input array\n"
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/core/src/operators/mathematical/rounding/rint.ts",
+					"line": 8,
+					"character": 20
+				}
+			]
+		},
+		{
 			"id": 771,
 			"name": "round",
 			"kind": 64,
@@ -14908,6 +15082,64 @@
 			]
 		},
 		{
+			"id": 788,
+			"name": "trunc",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 789,
+					"name": "trunc",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return the truncated value of the input, element-wise."
+					},
+					"parameters": [
+						{
+							"id": 790,
+							"name": "arr",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input array\n"
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/core/src/operators/mathematical/rounding/trunc.ts",
+					"line": 8,
+					"character": 21
+				}
+			]
+		},
+		{
 			"id": 706,
 			"name": "zeros",
 			"kind": 64,
@@ -15002,9 +15234,11 @@
 			"children": [
 				737,
 				775,
+				779,
 				700,
 				709,
 				728,
+				782,
 				760,
 				731,
 				734,
@@ -15017,9 +15251,11 @@
 				749,
 				703,
 				756,
+				785,
 				771,
 				722,
 				719,
+				788,
 				706
 			],
 			"categories": [
@@ -15054,7 +15290,11 @@
 					"title": "Mathematical Rounding",
 					"children": [
 						775,
-						771
+						779,
+						782,
+						785,
+						771,
+						788
 					]
 				},
 				{

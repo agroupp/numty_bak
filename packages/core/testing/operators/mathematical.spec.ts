@@ -1,6 +1,10 @@
 import {
   round,
   around,
+  rint,
+  floor,
+  ceil,
+  trunc,
   isNumber,
   getNumberOfFloatDecimals
 } from '../../src/operators/mathematical';
@@ -25,6 +29,26 @@ describe('Rounding', () => {
       [[3.14, 1.57, 1.05], [3.14, 1.57, 1.05]],
       [[3.14, 1.57, 1.05], [3.14, 1.57, 1.05]]
     ]);
+  });
+
+  it('should round elements of the array to the nearest integer.', () => {
+    expect(rint([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0]))
+    .toEqual([-2, -1, -0,  0,  2,  2,  2]);
+  });
+
+  it('should the floor the input, element-wise', () => {
+    expect(floor([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0]))
+    .toEqual([-2, -2, -1,  0,  1,  1,  2]);
+  });
+
+  it('should the ceil the input, element-wise', () => {
+    expect(ceil([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0]))
+    .toEqual([-1, -1, -0,  1,  2,  2,  2]);
+  });
+
+  it('should the truncate the input, element-wise', () => {
+    expect(trunc([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0]))
+    .toEqual([-1, -1, -0,  0,  1,  1,  2]);
   });
 });
 
