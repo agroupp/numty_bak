@@ -8,21 +8,22 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@nrwl/linter:lint",
+          "builder": "@nrwl/linter:eslint",
           "options": {
-            "linter": "eslint",
-            "tsConfig": [
-              "packages/core/tsconfig.lib.json",
-              "packages/core/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!packages/core/**/*"]
+            "lintFilePatterns": [
+              "packages/core/**/*.ts",
+              "packages/core/**/*.spec.ts",
+              "packages/core/**/*.spec.tsx",
+              "packages/core/**/*.spec.js",
+              "packages/core/**/*.spec.jsx",
+              "packages/core/**/*.d.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "packages/core/jest.config.js",
-            "tsConfig": "packages/core/tsconfig.spec.json",
             "passWithNoTests": true
           }
         },
@@ -33,7 +34,8 @@
             "tsConfig": "packages/core/tsconfig.lib.json",
             "packageJson": "packages/core/package.json",
             "main": "packages/core/src/index.ts",
-            "assets": ["packages/core/*.md"]
+            "assets": ["packages/core/*.md"],
+            "srcRootForCompilationRoot": "packages\\core\\src"
           }
         }
       }
@@ -45,21 +47,22 @@
       "schematics": {},
       "architect": {
         "lint": {
-          "builder": "@nrwl/linter:lint",
+          "builder": "@nrwl/linter:eslint",
           "options": {
-            "linter": "eslint",
-            "tsConfig": [
-              "packages/shared/internals/tsconfig.lib.json",
-              "packages/shared/internals/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!packages/shared/internals/**/*"]
+            "lintFilePatterns": [
+              "packages/shared/internals/**/*.ts",
+              "packages/shared/internals/**/*.spec.ts",
+              "packages/shared/internals/**/*.spec.tsx",
+              "packages/shared/internals/**/*.spec.js",
+              "packages/shared/internals/**/*.spec.jsx",
+              "packages/shared/internals/**/*.d.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "packages/shared/internals/jest.config.js",
-            "tsConfig": "packages/shared/internals/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }
