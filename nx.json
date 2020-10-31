@@ -28,6 +28,9 @@
     },
     "shared-internals": {
       "tags": ["scope:internal", "type:util", "target:all"]
+    },
+    "datetime": {
+      "tags": ["scope:public", "type:util", "target:all"]
     }
   },
   "workspaceLayout": {

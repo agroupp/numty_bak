@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@numty/core": ["packages/core/src/index.ts"],
-      "@numty/core/types": ["packages/core/src/basic-types"]
+      "@numty/core/types": ["packages/core/src/basic-types"],
+      "@numty/datetime": ["packages/datetime/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
