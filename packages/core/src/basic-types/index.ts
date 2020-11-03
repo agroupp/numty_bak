@@ -4,3 +4,4 @@ export { Vector } from './vector';
 export { Matrix } from './matrix';
 export { IHasHashCode } from './has-hash-code';
 export { IEquatable } from './equatable';
+export { IComparable } from './comparable';
