@@ -1,6 +1,6 @@
 # NumTy Datetime
 
-The package that gives operators and classes to extend functionality of base `Date` class. NumTy Datetime introduces `TimeSpan` class that abstracts the time intervals. It gives powerful methods to manipulate, do calculations and convert time intervals to strings in different formats.
+The package provides operators and classes to extend functionality of base `Date` class. NumTy Datetime introduces `TimeSpan` class that abstracts the time intervals. It gives powerful methods to manipulate, do calculations and convert time intervals to strings in different formats.
 
 ## Credits
 * [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=netcore-3.1) for the great work and brilliant ideas
