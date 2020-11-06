@@ -16,7 +16,7 @@ In the Core package you will find basic array creation and manipulation operator
 
 ## Resources
 * Sources: https://github.com/agroupp/numty
-* Source Code Documentation: https://agroupp.github.io/numty/
+* Source Code Documentation: https://agroupp.github.io/numty/core
 
 ## Installing
 ```shell
