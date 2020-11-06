@@ -6,7 +6,16 @@ export interface IEquatable<T> {
   /**
    * Indicates whether the current object is equal
    * to another object of the same type.
-   * @param other An object to compare with this object.
+   * @param other an object to compare with this object.
    */
   equals(other: T): boolean;
+
+  /**
+   * Indicates whether the object is equal
+   * to another object of the same type.
+   *
+   * @param obj1 an object to compare
+   * @param obj2 an object to compare
+   */
+  equals(obj1: T, obj2: T): boolean;
 }
