@@ -1,5 +1,5 @@
 import {
-  TimeSpan
+  TimeSpan, timeToString
 } from '../src';
 import { round } from '@numty/core';
 
@@ -80,4 +80,69 @@ describe('TimeSpan', () => {
       expect(ts.milliseconds).toEqual(200);
     });
   });
+
+  describe('Methods', () => {
+    it('duration', () => {
+      const ts1 = new TimeSpan(-1000);
+      const ts2 = new TimeSpan(1000);
+      const expectedTs = new TimeSpan(1000);
+      expect(ts1.duration()).toEqual(expectedTs);
+      expect(ts2.duration()).toEqual(expectedTs);
+    });
+    it('negate', () => {
+      const ts1 = new TimeSpan(-1000);
+      const expectedTs1 = new TimeSpan(1000);
+      const ts2 = new TimeSpan(1000);
+      const expectedTs2 = new TimeSpan(-1000);
+      expect(ts1.negate()).toEqual(expectedTs1);
+      expect(ts2.negate()).toEqual(expectedTs2);
+    });
+
+    it('toString', () => {
+      const ts1 = new TimeSpan(1000);
+      expect(ts1.toString('mm:ss')).toEqual(timeToString(1000, 'mm:ss'))
+    });
+
+    describe('Arithmetic', () => {
+      let ts: TimeSpan;
+      beforeEach(() => ts = TimeSpan.fromDays(3));
+      it('should add one TimeSpan to another', () => {
+        expect(ts.add(TimeSpan.fromDays(2)).totalDays).toEqual(5);
+      });
+      it('should subtract one TimeSpan from another', () => {
+        expect(ts.subtract(TimeSpan.fromDays(2)).totalDays).toEqual(1);
+      });
+      it('should multiply TimeSpan by factor', () => {
+        expect(ts.multiply(5).totalDays).toEqual(15);
+      });
+      it('should divide TimeSpan by divisor', () => {
+        try {
+          expect(ts.divide(3).totalDays).toEqual(1);
+          expect(ts.divide(0)).toThrowError('Division by zero');
+        // eslint-disable-next-line no-empty
+        } catch {}
+      });
+    });
+
+    describe('Equaty and comparision', () => {
+      it('equals', () => {
+        const ts1 = new TimeSpan(1000);
+        const ts2 = new TimeSpan(1000);
+        const ts3 = new TimeSpan(1100);
+        expect(ts1.equals(ts2)).toBeTruthy();
+        expect(ts1.equals(ts3)).toBeFalsy();
+        expect(TimeSpan.equals(ts1, ts2)).toBeTruthy();
+        expect(TimeSpan.equals(ts2, ts3)).toBeFalsy();
+        expect(ts1.equals(undefined)).toBeFalsy();
+        expect(TimeSpan.equals(ts1, undefined)).toBeFalsy();
+        expect(TimeSpan.equals(undefined, undefined)).toBeFalsy();
+      });
+
+      it('should return hash code', () => {
+        expect(TimeSpan.fromSeconds(60).getHashCode()).toEqual(60000);
+      });
+    });
+  });
+
+
 });

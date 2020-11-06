@@ -1,4 +1,7 @@
-export class TimeSpan {
+import { IHasHashCode, IEquatable, IComparable } from '@numty/core';
+import { timeToString } from '../operators';
+
+export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan> {
   private readonly _milliseconds: number;
   private readonly _maxDays = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60 / 24;
   private readonly _maxHours = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60;
@@ -72,11 +75,6 @@ export class TimeSpan {
    */
   get totalDays(): number { return this._milliseconds / 1000 / 60 / 60 / 24; }
 
-  /**
-   * Gets the value of the current TimeSpan expressed in whole and fractional weeks.
-   */
-  get totalWeeks(): number { return this._milliseconds / 1000 / 60 / 60 / 24 / 7; }
-
   constructor(milliseconds: number) {
     this._milliseconds = milliseconds;
   }
@@ -106,8 +104,58 @@ export class TimeSpan {
     return this._milliseconds === ts.totalMilliseconds;
   }
 
+  /**
+   * Returns a hash code for this instance.
+   */
+  getHashCode(): number {
+    return this._milliseconds;
+  }
+
+  /**
+   * Returns a new TimeSpan object whose value is the sum of
+   * the specified TimeSpan object and this instance.
+   * @param ts the time interval to add.
+   */
+  add(ts: TimeSpan): TimeSpan {
+    return new TimeSpan(this._milliseconds + ts.totalMilliseconds);
+  }
+
+  /**
+   * Returns a new TimeSpan object whose value is the difference between
+   * the specified TimeSpan object and this instance.
+   * @param ts the time interval to be subtracted.
+   */
+  subtract(ts: TimeSpan): TimeSpan {
+    return new TimeSpan(this._milliseconds - ts.totalMilliseconds);
+  }
+
+  /**
+   * Returns a new TimeSpan object which value is the result
+   * of multiplication of this instance and the specified factor.
+   * @param factor the value to be multiplied by.
+   */
+  multiply(factor: number): TimeSpan {
+    return new TimeSpan(this._milliseconds * factor);
+  }
+
+  /**
+   * Returns a new TimeSpan object which value is the result
+   * of division of this instance and the specified divisor.
+   * @param divisor the value to be divided by.
+   */
+  divide(divisor: number): TimeSpan {
+    if (divisor === 0) {
+      throw new Error('Division by zero');
+    }
+    return new TimeSpan(this._milliseconds / divisor);
+  }
+
+  /**
+   * Converts the value of the current TimeSpan object to its equivalent string representation.
+   * @param format time format string
+   */
   toString(format?: string): string {
-    throw('');
+    return timeToString(this._milliseconds, format);
   }
 
   /**
@@ -135,4 +183,47 @@ export class TimeSpan {
     const ms = value * 24 * 60 * 60 * 1000;
     return new TimeSpan(ms);
   }
+
+  /**
+   * Returns a TimeSpan that represents a specified number of hours,
+   * where the specification is accurate to the nearest millisecond.
+   * @param value
+   */
+  public static fromHours(value: number): TimeSpan {
+    const maxHours = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60;
+    if (value > maxHours) {
+      throw new Error('Overflow!');
+    }
+    const ms = value * 60 * 60 * 1000;
+    return new TimeSpan(ms);
+  }
+
+  /**
+   * Returns a TimeSpan that represents a specified number of minutes,
+   * where the specification is accurate to the nearest millisecond.
+   * @param value
+   */
+  public static fromMinutes(value: number): TimeSpan {
+    const maxHours = Number.MAX_SAFE_INTEGER / 1000 / 60;
+    if (value > maxHours) {
+      throw new Error('Overflow!');
+    }
+    const ms = value * 60 * 1000;
+    return new TimeSpan(ms);
+  }
+
+  /**
+   * Returns a TimeSpan that represents a specified number of seconds,
+   * where the specification is accurate to the nearest millisecond.
+   * @param value
+   */
+  public static fromSeconds(value: number): TimeSpan {
+    const maxHours = Number.MAX_SAFE_INTEGER / 1000;
+    if (value > maxHours) {
+      throw new Error('Overflow!');
+    }
+    const ms = value * 1000;
+    return new TimeSpan(ms);
+  }
+
 }

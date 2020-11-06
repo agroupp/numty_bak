@@ -12,4 +12,13 @@ describe('dateSubtract', () => {
     const ts = dateSubtract(d)
     expect(ts.hours).toEqual(2);
   });
+
+  it('should throw the error', () => {
+    try {
+      const expectedError = new Error('Subtrahend must be provided');
+      expect(dateSubtract(undefined)).toThrowError(expectedError);
+    // eslint-disable-next-line no-empty
+    } catch {
+    }
+  });
 });
