@@ -5,6 +5,8 @@ import { TimeSpan } from '../TimeSpan';
  * and returns TimeSpan. If minuend is not specified
  * subtrahend will be suctracted from `now`.
  *
+ * @category Time interval
+ *
  * @param d1 subtrahend
  * @param d2 minuend
  */

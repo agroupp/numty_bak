@@ -7,5 +7,22 @@
     "types": ["node"]
   },
   "exclude": ["**/*.spec.ts"],
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "typedocOptions": {
+    "mode": "file",
+    "inputFiles": "packages/datetime/src",
+    "out": "docs/datetime",
+    "entryPoint": "index",
+    "exclude": "**/*(index|core).ts",
+    "excludeNotExported": true,
+    "excludePrivate": true,
+    "excludeExternals": true,
+    "stripInternal": true,
+    "hideGenerator": true,
+    "categoryOrder": [
+      "Time interval"
+    ],
+    "json": "docs/datetime/sidebar.json",
+    "plugin": "none"
+  }
 }

@@ -3,6 +3,8 @@
  * instance precedes, follows, or occurs in the same position in
  * the sort order as the other object.
  *
+ * @category Logic Comparision
+ *
  * @param n1 number to compare
  * @param n2 number to compare
  * @returns

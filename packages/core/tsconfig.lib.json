@@ -11,7 +11,7 @@
   "typedocOptions": {
     "mode": "file",
     "inputFiles": "packages/core/src",
-    "out": "docs",
+    "out": "docs/core",
     "entryPoint": "index",
     "exclude": "**/*(index|core).ts",
     "excludeNotExported": true,
@@ -21,13 +21,14 @@
     "categoryOrder": [
       "Array Creation",
       "Array Manipulation",
+      "Logic Comparision",
       "Mathematical Trigonometric",
       "Mathematical Rounding",
       "Mathematical Arithmetic",
       "Mathematical Miscellaneous",
       "*"
     ],
-    "json": "docs/sidebar.json",
+    "json": "docs/core/sidebar.json",
     "plugin": "none"
   }
 }

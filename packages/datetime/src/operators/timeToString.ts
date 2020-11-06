@@ -1,8 +1,22 @@
 import { round } from '@numty/core';
+
+/**
+ * @internal
+ */
 type FormatSpecifiers = 'c'| 'g'| 'G' | 'h' | 'hh' | 'm' | 'mm' | 's' | 'ss';
 
+/**
+ * @internal
+ */
 const FORMAT_SPECIFIERS: FormatSpecifiers[] = ['c', 'g', 'G'];
 
+/**
+ * Parses given format string
+ *
+ * @internal
+ *
+ * @param formatString
+ */
 function parseFormatString(formatString: string) {
   formatString = !formatString || !formatString.trim() ? 'c' : formatString.trim();
   const formatStringSplitted: string[] = formatString.split('.');
@@ -17,6 +31,14 @@ function parseFormatString(formatString: string) {
   return {format, secondsFractionalLength};
 }
 
+/**
+ * Adds zero in front of value if value is lower than 10
+ *
+ * @internal
+ *
+ * @param value
+ * @param digits
+ */
 function addLeadingZero(value: number, digits = 0): string {
   return value < 10 ? `0${value.toFixed(digits)}` : `${value.toFixed(digits)}`;
 }
@@ -36,6 +58,8 @@ function addLeadingZero(value: number, digits = 0): string {
  * 1.14:30:15 |   hh:mm:ss   | 14:30:15
  * 1.14:30:15 | hh:mm:ss.MMM | 14:30:15.000
  *
+ *
+ * @category Time interval
  *
  * @param milliseconds time span in milliseconds
  * @param formatString

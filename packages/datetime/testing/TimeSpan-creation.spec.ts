@@ -56,4 +56,8 @@ describe('Create TimeSpan', () => {
       } catch {}
     });
   });
+
+  describe('Parse', () => {
+    it.todo('');
+  });
 });

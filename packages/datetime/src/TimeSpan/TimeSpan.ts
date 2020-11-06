@@ -1,6 +1,11 @@
 import { IHasHashCode, IEquatable, IComparable, compareNumbers } from '@numty/core';
 import { timeToString } from '../operators';
 
+/**
+ * Represents a time interval.
+ *
+ * @category Time interval
+ */
 export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan>, IComparable<TimeSpan> {
   private readonly _milliseconds: number;
   private readonly _maxDays = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60 / 24;
@@ -257,4 +262,11 @@ export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan>, IComparable
     return new TimeSpan(ms);
   }
 
+  /**
+   * Converts the string representation of a time interval to its TimeSpan equivalent.
+   * @param s a string that specifies the time interval to convert
+   */
+  public static parse(s: string): TimeSpan {
+    throw new Error('Not yet implemented');
+  }
 }

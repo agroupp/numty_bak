@@ -3,6 +3,8 @@
  * a value type or class implements to create a
  * type-specific comparison method for ordering
  * or sorting its instances.
+ *
+ * @category Basic Types
  */
 export interface IComparable<T> {
   /**

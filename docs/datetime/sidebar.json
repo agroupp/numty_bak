@@ -1,0 +1,1589 @@
+{
+	"id": 0,
+	"name": "@numty/datetime",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 17,
+			"name": "TimeSpan",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "Represents a time interval."
+			},
+			"children": [
+				{
+					"id": 43,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 44,
+							"name": "new TimeSpan",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 45,
+									"name": "milliseconds",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 81,
+							"character": 78
+						}
+					]
+				},
+				{
+					"id": 23,
+					"name": "days",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the days component of the time interval represented by the current TimeSpan."
+					},
+					"getSignature": [
+						{
+							"id": 24,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the days component of the time interval represented by the current TimeSpan."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 19,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 25,
+					"name": "hours",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+					},
+					"getSignature": [
+						{
+							"id": 26,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 26,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 31,
+					"name": "milliseconds",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+					},
+					"getSignature": [
+						{
+							"id": 32,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 50,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 27,
+					"name": "minutes",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+					},
+					"getSignature": [
+						{
+							"id": 28,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 33,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 29,
+					"name": "seconds",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+					},
+					"getSignature": [
+						{
+							"id": 30,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the hours component of the time interval represented by the current TimeSpan."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 40,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 41,
+					"name": "totalDays",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional days."
+					},
+					"getSignature": [
+						{
+							"id": 42,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional days."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 81,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 39,
+					"name": "totalHours",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional hours."
+					},
+					"getSignature": [
+						{
+							"id": 40,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional hours."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 76,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 33,
+					"name": "totalMilliseconds",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional milliseconds."
+					},
+					"getSignature": [
+						{
+							"id": 34,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional milliseconds."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 61,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 37,
+					"name": "totalMinutes",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional minutes."
+					},
+					"getSignature": [
+						{
+							"id": 38,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional minutes."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 71,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 35,
+					"name": "totalSeconds",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional seconds."
+					},
+					"getSignature": [
+						{
+							"id": 36,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Gets the value of the current TimeSpan expressed in whole and fractional seconds."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 66,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 58,
+					"name": "add",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 59,
+							"name": "add",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object whose value is the sum of\nthe specified TimeSpan object and this instance."
+							},
+							"parameters": [
+								{
+									"id": 60,
+									"name": "ts",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "the time interval to add.\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 137,
+							"character": 5
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "compareTo",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 56,
+							"name": "compareTo",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a number that indicates whether this instance of TimeSpan\nprecedes, follows or equal to a specified TimeSpan object."
+							},
+							"parameters": [
+								{
+									"id": 57,
+									"name": "ts",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "TimeSpan object to compare\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 125,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 67,
+					"name": "divide",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 68,
+							"name": "divide",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object which value is the result\nof division of this instance and the specified divisor."
+							},
+							"parameters": [
+								{
+									"id": 69,
+									"name": "divisor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "the value to be divided by.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 164,
+							"character": 8
+						}
+					]
+				},
+				{
+					"id": 46,
+					"name": "duration",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 47,
+							"name": "duration",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object whose value is the absolute value of the current TimeSpan object."
+							},
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 90,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 50,
+					"name": "equals",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 51,
+							"name": "equals",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a value indicating whether this instance is equal to a specified TimeSpan object."
+							},
+							"parameters": [
+								{
+									"id": 52,
+									"name": "ts",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "TimeSpan object to test\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 105,
+							"character": 8
+						}
+					]
+				},
+				{
+					"id": 53,
+					"name": "getHashCode",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 54,
+							"name": "getHashCode",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a hash code for this instance."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 115,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 64,
+					"name": "multiply",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 65,
+							"name": "multiply",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object which value is the result\nof multiplication of this instance and the specified factor."
+							},
+							"parameters": [
+								{
+									"id": 66,
+									"name": "factor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "the value to be multiplied by.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 155,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 48,
+					"name": "negate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 49,
+							"name": "negate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object whose value is the negated value of the current TimeSpan object."
+							},
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 97,
+							"character": 8
+						}
+					]
+				},
+				{
+					"id": 61,
+					"name": "subtract",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 62,
+							"name": "subtract",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a new TimeSpan object whose value is the difference between\nthe specified TimeSpan object and this instance."
+							},
+							"parameters": [
+								{
+									"id": 63,
+									"name": "ts",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "the time interval to be subtracted.\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 146,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 70,
+					"name": "toString",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 71,
+							"name": "toString",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Converts the value of the current TimeSpan object to its equivalent string representation."
+							},
+							"parameters": [
+								{
+									"id": 72,
+									"name": "format",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"comment": {
+										"text": "time format string\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 175,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 77,
+					"name": "compare",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 78,
+							"name": "compare",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a number that indicates whether one instance of TimeSpan\nprecedes other."
+							},
+							"parameters": [
+								{
+									"id": 79,
+									"name": "ts1",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								},
+								{
+									"id": 80,
+									"name": "ts2",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 197,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 73,
+					"name": "equals",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 74,
+							"name": "equals",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a value that indicates whether two specified instances of TimeSpan are equal."
+							},
+							"parameters": [
+								{
+									"id": 75,
+									"name": "ts1",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								},
+								{
+									"id": 76,
+									"name": "ts2",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 17,
+										"name": "TimeSpan"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 184,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 81,
+					"name": "fromDays",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 82,
+							"name": "fromDays",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a TimeSpan that represents a specified number of days,\nwhere the specification is accurate to the nearest millisecond."
+							},
+							"parameters": [
+								{
+									"id": 83,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 214,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 84,
+					"name": "fromHours",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 85,
+							"name": "fromHours",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a TimeSpan that represents a specified number of hours,\nwhere the specification is accurate to the nearest millisecond."
+							},
+							"parameters": [
+								{
+									"id": 86,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 228,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 87,
+					"name": "fromMinutes",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 88,
+							"name": "fromMinutes",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a TimeSpan that represents a specified number of minutes,\nwhere the specification is accurate to the nearest millisecond."
+							},
+							"parameters": [
+								{
+									"id": 89,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 242,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 90,
+					"name": "fromSeconds",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 91,
+							"name": "fromSeconds",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns a TimeSpan that represents a specified number of seconds,\nwhere the specification is accurate to the nearest millisecond."
+							},
+							"parameters": [
+								{
+									"id": 92,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 256,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 93,
+					"name": "parse",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 94,
+							"name": "parse",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Converts the string representation of a time interval to its TimeSpan equivalent."
+							},
+							"parameters": [
+								{
+									"id": 95,
+									"name": "s",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "a string that specifies the time interval to convert\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 17,
+								"name": "TimeSpan"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+							"line": 269,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						43
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						23,
+						25,
+						31,
+						27,
+						29,
+						41,
+						39,
+						33,
+						37,
+						35
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						58,
+						55,
+						67,
+						46,
+						50,
+						53,
+						64,
+						48,
+						61,
+						70,
+						77,
+						73,
+						81,
+						84,
+						87,
+						90,
+						93
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/datetime/src/TimeSpan/TimeSpan.ts",
+					"line": 9,
+					"character": 21
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "IHasHashCode"
+				},
+				{
+					"type": "reference",
+					"typeArguments": [
+						{
+							"type": "reference",
+							"id": 17,
+							"name": "TimeSpan"
+						}
+					],
+					"name": "IEquatable"
+				},
+				{
+					"type": "reference",
+					"typeArguments": [
+						{
+							"type": "reference",
+							"id": 17,
+							"name": "TimeSpan"
+						}
+					],
+					"name": "IComparable"
+				}
+			]
+		},
+		{
+			"id": 96,
+			"name": "dateSubtract",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 97,
+					"name": "dateSubtract",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Subtracts a specified date from another date\nand returns TimeSpan. If minuend is not specified\nsubtrahend will be suctracted from `now`."
+					},
+					"parameters": [
+						{
+							"id": 98,
+							"name": "d1",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "subtrahend"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Date"
+							}
+						},
+						{
+							"id": 99,
+							"name": "d2",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "minuend\n"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Date"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 17,
+						"name": "TimeSpan"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/datetime/src/operators/dateSubtract.ts",
+					"line": 13,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "timeToString",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 14,
+					"name": "timeToString",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return string representation of time span according\nto specified format.",
+						"text": "Format can be one of the predefined specifiers: `c`, `g`, `G`\nor custom in the way `hh:mm:ss.MMM`.\n\nInterval   |    Format    | Result\n---------- | ------------ | ----------\n1.14:30:15 |       c      | 1.14:30:15\n1.14:30:15 |       g      | 1:14:30:15\n1.14:30:15 |       G      | 1.14:30:15.000\n1.14:30:15 |   hh:mm:ss   | 14:30:15\n1.14:30:15 | hh:mm:ss.MMM | 14:30:15.000\n\n"
+					},
+					"parameters": [
+						{
+							"id": 15,
+							"name": "milliseconds",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "time span in milliseconds"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 16,
+							"name": "formatString",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "\n"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/datetime/src/operators/timeToString.ts",
+					"line": 67,
+					"character": 28
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				17
+			],
+			"categories": [
+				{
+					"title": "Time interval",
+					"children": [
+						17
+					]
+				}
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				96,
+				13
+			],
+			"categories": [
+				{
+					"title": "Time interval",
+					"children": [
+						96,
+						13
+					]
+				}
+			]
+		}
+	]
+}
