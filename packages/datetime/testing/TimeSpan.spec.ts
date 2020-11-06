@@ -141,6 +141,23 @@ describe('TimeSpan', () => {
       it('should return hash code', () => {
         expect(TimeSpan.fromSeconds(60).getHashCode()).toEqual(60000);
       });
+
+      it('compareTo', () => {
+        const ts1 = new TimeSpan(1000);
+        const ts2 = new TimeSpan(1000);
+        const ts3 = new TimeSpan(1100);
+        const ts4 = new TimeSpan(900);
+        expect(ts1.compareTo(ts2)).toEqual(0);
+        expect(ts1.compareTo(ts3)).toEqual(-1);
+        expect(ts1.compareTo(ts4)).toEqual(1);
+        expect(ts1.compareTo(undefined)).toEqual(1);
+        expect(TimeSpan.compare(ts1, ts2)).toEqual(0);
+        expect(TimeSpan.compare(undefined, undefined)).toEqual(0);
+        expect(TimeSpan.compare(ts1, ts3)).toEqual(-1);
+        expect(TimeSpan.compare(undefined, ts3)).toEqual(-1);
+        expect(TimeSpan.compare(ts1, ts4)).toEqual(1);
+        expect(TimeSpan.compare(ts1, undefined)).toEqual(1);
+      });
     });
   });
 

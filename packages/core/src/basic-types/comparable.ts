@@ -24,13 +24,4 @@ export interface IComparable<T> {
    * Greater than zero	| This instance follows other in the sort order.
    */
   compareTo(other: T): number;
-
-  /**
-   * Compares two intances of type T
-   * @see description of `compareTo` method
-   *
-   * @param obj1 an object to compare
-   * @param obj2 an object to compare
-   */
-  compare(obj1: T, obj2: T): number;
 }

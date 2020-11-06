@@ -1,7 +1,7 @@
-import { IHasHashCode, IEquatable, IComparable } from '@numty/core';
+import { IHasHashCode, IEquatable, IComparable, compareNumbers } from '@numty/core';
 import { timeToString } from '../operators';
 
-export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan> {
+export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan>, IComparable<TimeSpan> {
   private readonly _milliseconds: number;
   private readonly _maxDays = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60 / 24;
   private readonly _maxHours = Number.MAX_SAFE_INTEGER / 1000 / 60 / 60;
@@ -95,7 +95,7 @@ export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan> {
 
   /**
    * Returns a value indicating whether this instance is equal to a specified TimeSpan object.
-   * @param ts
+   * @param ts TimeSpan object to test
    */
   equals(ts: TimeSpan): boolean {
     if (!ts) {
@@ -109,6 +109,19 @@ export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan> {
    */
   getHashCode(): number {
     return this._milliseconds;
+  }
+
+  /**
+   * Returns a number that indicates whether this instance of TimeSpan
+   * precedes, follows or equal to a specified TimeSpan object.
+   *
+   * @param ts TimeSpan object to compare
+   */
+  compareTo(ts: TimeSpan): number {
+    if (!ts) {
+      return 1;
+    }
+    return compareNumbers(this._milliseconds, ts.totalMilliseconds);
   }
 
   /**
@@ -168,6 +181,24 @@ export class TimeSpan implements IHasHashCode, IEquatable<TimeSpan> {
       return false;
     }
     return ts1.equals(ts2);
+  }
+
+  /**
+   * Returns a number that indicates whether one instance of TimeSpan
+   * precedes other.
+   * @param ts1
+   * @param ts2
+   */
+  public static compare(ts1: TimeSpan, ts2: TimeSpan): number {
+    if (!ts1 && !ts2) {
+      return 0;
+    } else if (!ts1) {
+      return -1;
+    } else if (!ts2) {
+      return 1;
+    } else {
+      return ts1.compareTo(ts2);
+    }
   }
 
   /**
